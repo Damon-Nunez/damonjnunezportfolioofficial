@@ -1,11 +1,11 @@
 import React from "react";
 import StarBucksLogo from '../images/StarBucksLogo.webp'
-
+import ArtVerse from '../images/ArtVerse.jpg'
 const projects = [
   {
     title: "ArtVerse",
     description: "A full-stack social platform for artists with post, like, comment, and bubble-saving features.",
-    image: "https://via.placeholder.com/600x400",
+    image: ArtVerse,
     link: "https://github.com/Damon-Nunez/ArtVerseOfficial"
   },
   {

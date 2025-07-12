@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js";
 import Contact from "./components/Contact.js";
+import Skills from "./components/Skills.js";
+import Projects from "./components/Projects.js";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      {/* Project cards section would go here */}
+      <Skills/>
+      <Projects/>
       <Contact />
     </div>
   );

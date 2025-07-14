@@ -1,24 +1,28 @@
 import React from "react";
 import StarBucksLogo from '../images/StarBucksLogo.webp'
 import ArtVerse from '../images/ArtVerse.jpg'
+import OldPortfolio from '../images/Portfolio.png'
 const projects = [
   {
     title: "ArtVerse",
     description: "A full-stack social platform for artists with post, like, comment, and bubble-saving features.",
     image: ArtVerse,
-    link: "https://github.com/Damon-Nunez/ArtVerseOfficial"
+    link: "https://drive.google.com/file/d/1-NpgmFPQGws3JEhh5ZYxLOtzUTupD03Z/view",
+    code: "https://github.com/Damon-Nunez/ArtVerseOfficial"
   },
   {
     title: "Starbucks clone",
     description: "A StarBucks cloned website ",
     image: StarBucksLogo,
-    link: "https://github.com/Damon-Nunez/starbucksthedamonway"
+    link: "https://coffee-ridden.netlify.app/",
+    code: "https://github.com/Damon-Nunez/starbucksthedamonway",
   },
   {
     title: "Portfolio v1",
     description: "My original portfolio built with basic React and CSS. Now archived.",
-    image: "https://via.placeholder.com/600x400",
-    link: "https://github.com/Damon-Nunez/Portfolio"
+    image: OldPortfolio,
+    link: "https://damonjnunez.netlify.app/",
+    code: "https://github.com/Damon-Nunez/Portfolio"
   }
 ];
 
@@ -38,9 +42,17 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-indigo-600 hover:underline"
+                  className="inline-block text-indigo-600 hover:underline px-6"
                 >
                   View Project
+                </a>
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-indigo-600 hover:underline"
+                >
+                  View Code
                 </a>
               </div>
             </div>

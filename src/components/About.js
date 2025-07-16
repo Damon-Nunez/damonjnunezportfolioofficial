@@ -24,36 +24,34 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-black text-gray-800">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-black">
-
-        {/* Left: Skills */}
-        <Fade direction="left" triggerOnce>
-          <div>
-            <h2 className="text-3xl font-bold text-indigo-600 mb-6 text-center">Skills</h2>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 justify-items-center">
-              {skills.map(({ name, icon: Icon }, index) => (
-                <div key={index} className="flex flex-col items-center space-y-2">
-                  <Icon className="w-10 h-10 text-white" />
-                  <p className="text-sm text-white font-medium">{name}</p>
-                </div>
-              ))}
+<section id="about" className="h-screen flex items-center justify-center bg-black text-gray-800 px-6">
+  <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <Fade direction="left" triggerOnce>
+      <div className="border border-blue-300 rounded-xl p-8">
+        <h2 className="text-4xl font-bold text-indigo-600 mb-8 text-center">Skills</h2>
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 justify-items-center">
+          {skills.map(({ name, icon: Icon }, index) => (
+            <div key={index} className="flex flex-col items-center space-y-2">
+              <Icon className="w-14 h-14 text-white" />
+              <p className="text-md text-white font-medium">{name}</p>
             </div>
-          </div>
-        </Fade>
-
-        {/* Right: About Me */}
-        <Fade direction="right" triggerOnce delay={200}>
-          <div className="p-6 bg- rounded-xl shadow text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4 text-indigo-600">About Me</h2>
-            <p className="text-lg leading-relaxed text-white">
-              I’m a passionate software developer with a love for solving real-world problems.
-              I specialize in React, Node.js, and creating responsive, clean UI experiences.
-            </p>
-          </div>
-        </Fade>
-
+          ))}
+        </div>
       </div>
-    </section>
+    </Fade>
+
+    <Fade direction="right" triggerOnce delay={200}>
+      <div className="border border-blue-300 rounded-xl p-8 text-center md:text-left">
+        <h2 className="text-4xl font-bold mb-6 text-indigo-600">About Me</h2>
+        <p className="text-xl leading-relaxed text-white">
+          I’m a passionate software developer with a love for solving real-world problems.
+          I specialize in React, Node.js, and creating responsive, clean UI experiences.
+        </p>
+      </div>
+    </Fade>
+  </div>
+</section>
+
+
   );
 }

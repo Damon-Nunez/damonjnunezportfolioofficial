@@ -20,9 +20,6 @@ export default function Navbar() {
             <a href="#about" className="relative text-white hover:text-indigo-400 transition-all duration-200 transform hover:scale-105 hover:drop-shadow-md after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all 
 hover:no-underline visited:no-underline active:no-underline
 ">About</a>
-            <a href="#skills" className="relative text-white hover:text-indigo-400 transition-all duration-200 transform hover:scale-105 hover:drop-shadow-md after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all 
-hover:no-underline visited:no-underline active:no-underline
-">Skills</a>
             <a href="#projects" className="relative text-white hover:text-indigo-400 transition-all duration-200 transform hover:scale-105 hover:drop-shadow-md after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all 
 hover:no-underline visited:no-underline active:no-underline
 ">Projects</a>

@@ -1,64 +1,57 @@
 import React from "react";
-import BigTrax from '../images/BigTrax.jpg';
-import ReactTyped from "react-typed";
 import { Fade } from "react-awesome-reveal";
+import ReactTyped from "react-typed";
 
 export default function Hero() {
   return (
-    <section id="home" className="h-screen bg-black flex flex-col md:flex-row items-center">
-      
-      {/* LEFT COLUMN: Image */}
-      <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
-        <img
-          src={BigTrax}
-          alt="BigTrax"
-          className="w-[550px] h-[550px] mx-auto object-cover rounded-full shadow-lg"
-        />
-      </div>
+    <section
+      id="home"
+      className="h-screen bg-gradient-to-b from-black to-gray-900 text-white flex flex-col justify-center items-center px-4"
+    >
 
-      {/* RIGHT COLUMN: Text + Buttons */}
-      <div className="w-full md:w-1/2 max-w-3xl text-center md:text-left space-y-6">
-        <Fade triggerOnce direction="up">
-          <h1 className="text-4xl md:text-6xl font-bold text-indigo-600">
-            <ReactTyped
-              strings={["Hi, I'm Damon!"]}
-              typeSpeed={30}
-              backSpeed={30}
-              loop={false}
-            />
-          </h1>
-        </Fade>
+         <Fade triggerOnce direction="up">
+        <h1 className="text-5xl md:text-7xl font-bold text-indigo-500 mb-6 text-center">
+        
+        </h1>
+      </Fade>
+      <Fade triggerOnce direction="up">
+        <h1 className="text-5xl md:text-7xl font-bold text-indigo-500 mb-6 text-center">
+          Damon Nunez
+        </h1>
+      </Fade>
 
-        <Fade triggerOnce direction="up" delay={200}>
-          <p className="text-lg md:text-xl text-gray-300">
-            <ReactTyped
-              strings={[
-                "A Full-Stack Developer who loves building expressive interfaces and challenging myself to new avenues of tech knowledge!",
-              ]}
-              typeSpeed={10}
-              backSpeed={30}
-              loop={false}
-            />
-          </p>
-        </Fade>
+      <Fade triggerOnce direction="up" delay={200}>
+        <h2 className="text-xl md:text-2xl text-gray-300 mb-10 text-center max-w-2xl">
+          <ReactTyped
+            strings={[
+              "Full-Stack Developer.",
+              "Builder of clean UIs.",
+              "Obsessed with crafting meaningful tech.",
+              "Binger of animes...oops"
+            ]}
+            typeSpeed={40}
+            backSpeed={20}
+            loop
+          />
+        </h2>
+      </Fade>
 
-        <Fade triggerOnce direction="up" delay={400}>
-          <div className="flex flex justify-center space-x-8">
-            <a
-              href="#projects"
-              className="bg-white text-indigo-600 px-6 py-2 rounded shadow hover:bg-indigo-100 transform hover:scale-105 transition hover:no-underline visited:no-underline active:no-underline"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="bg-white text-indigo-600 px-6 py-2 rounded shadow hover:bg-indigo-100 transform hover:scale-105 transition hover:no-underline visited:no-underline active:no-underline"
-            >
-              Contact Me!
-            </a>
-          </div>
-        </Fade>
-      </div>
+      <Fade triggerOnce direction="up" delay={400}>
+        <div className="flex flex-wrap justify-center gap-6">
+          <a
+            href="#projects"
+            className="bg-white text-indigo-600 px-6 py-3 rounded shadow hover:bg-indigo-100 transform hover:scale-105 transition"
+          >
+            View My Work
+          </a>
+          <a
+            href="#contact"
+            className="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transform hover:scale-105 transition"
+          >
+            Contact Me
+          </a>
+        </div>
+      </Fade>
     </section>
   );
 }

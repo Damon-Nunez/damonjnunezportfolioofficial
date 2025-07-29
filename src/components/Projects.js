@@ -11,7 +11,7 @@ const projects = [
     image: ArtVerse,
     link: "https://drive.google.com/file/d/1-NpgmFPQGws3JEhh5ZYxLOtzUTupD03Z/view",
     code: "https://github.com/Damon-Nunez/ArtVerseOfficial",
-    tags: ["React", "Next.js", "PostgreSQL"]
+    tags: ["React", "Next.js", "PostgreSQL", "Cloudinary"]
   },
   {
     title: "Starbucks Clone",

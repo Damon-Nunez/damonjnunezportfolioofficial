@@ -40,7 +40,10 @@ export default function Projects() {
         <Fade triggerOnce direction="up">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, index) => (
-              <div key={index} className="relative bg-gray-100 rounded-xl shadow-md overflow-hidden group">
+             <div
+  key={index}
+  className="relative bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
+>
                 
                 {/* Project Image */}
                 <img

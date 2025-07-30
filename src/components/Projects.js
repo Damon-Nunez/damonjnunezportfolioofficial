@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import StarBucksLogo from '../images/StarBucksLogo.webp';
-import ArtVerse from '../images/ArtVerse.jpg';
+import ArtVerse from '../images/ArtVerse.gif';
 import OldPortfolio from '../images/Portfolio.png';
 
 const projects = [
@@ -44,13 +44,22 @@ export default function Projects() {
   key={index}
   className="relative bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
 >
-                
-                {/* Project Image */}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+ {project.title === "ArtVerse" ? (
+  <div className="bg-pink-200 h-48 w-full flex items-center justify-center">
+    <img
+      src={ArtVerse}
+      alt="ArtVerse demo"
+      className="h-full object-contain"
+    />
+  </div>
+) : (
+  <div className="bg-indigo-100 h-48 flex items-center justify-center">
+    <div className="text-indigo-700 text-xl font-semibold">
+      {project.title}
+    </div>
+  </div>
+)}
+
 
                 {/* Overlay for ArtVerse */}
                 {project.title === "ArtVerse" && (
@@ -66,8 +75,8 @@ export default function Projects() {
 
                 {/* Info */}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
+                  <h3 className="text-lg font-bold text-gray-800 mb-1">{project.title}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{project.description}</p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">

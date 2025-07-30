@@ -11,7 +11,7 @@ const projects = [
     image: ArtVerse,
     link: "https://drive.google.com/file/d/1-NpgmFPQGws3JEhh5ZYxLOtzUTupD03Z/view",
     code: "https://github.com/Damon-Nunez/ArtVerseOfficial",
-    tags: ["React", "Next.js", "PostgreSQL", "Cloudinary"]
+    tags: ["React", "Next.js", "PostgreSQL", "Bootstrap", "Figma", "Cloudinary", "MySQL"]
   },
   {
     title: "Starbucks Clone",
@@ -19,7 +19,7 @@ const projects = [
     image: StarBucksLogo,
     link: "https://coffee-ridden.netlify.app/",
     code: "https://github.com/Damon-Nunez/starbucksthedamonway",
-    tags: ["HTML", "CSS", "JavaScript"]
+    tags: ["React", "Bootstrap", "JavaScript"]
   },
   {
     title: "Portfolio v1",
@@ -27,7 +27,7 @@ const projects = [
     image: OldPortfolio,
     link: "https://damonjnunez.netlify.app/",
     code: "https://github.com/Damon-Nunez/Portfolio",
-    tags: ["React", "CSS"]
+    tags: ["React", "Bootstrap", "CSS", "JavaScript"]
   }
 ];
 
@@ -68,11 +68,28 @@ export default function Projects() {
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, i) => (
-                      <span key={i} className="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">
-                        {tag}
-                      </span>
-                    ))}
+                    {project.tags.map((tag, i) => {
+                      const colors = {
+                        "React": "bg-blue-100 text-blue-700",
+                        "Next.js": "bg-black text-white",
+                        "PostgreSQL": "bg-indigo-100 text-indigo-700",
+                        "Bootstrap": "bg-purple-100 text-purple-700",
+                        "Figma": "bg-pink-100 text-pink-700",
+                        "Cloudinary": "bg-blue-50 text-blue-800",
+                        "MySQL": "bg-blue-200 text-blue-800",
+                        "JavaScript": "bg-yellow-100 text-yellow-800",
+                        "CSS": "bg-cyan-100 text-cyan-700"
+                      };
+
+                      return (
+                        <span
+                          key={i}
+                          className={`text-xs px-2 py-1 rounded-full font-medium ${colors[tag] || "bg-gray-100 text-gray-700"}`}
+                        >
+                          {tag}
+                        </span>
+                      );
+                    })}
                   </div>
 
                   {/* Links */}

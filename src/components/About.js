@@ -37,7 +37,7 @@ export default function About() {
         ["2018", "ScriptEd"],
         ["2019–2021", "Code Nation"],
         ["2022–2023", "Marcy Lab School"],
-        ["2023–2024", "Solo Arc"],
+        ["2023–2024", "Solo Learning"],
         ["2025", "Return to Marcy"]
       ].map(([year, label], i) => (
         <Fade key={i} triggerOnce direction="up" delay={i * 100}>

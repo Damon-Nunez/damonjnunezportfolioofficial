@@ -1,8 +1,9 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import StarBucksLogo from '../images/StarBucksLogo.webp';
 import ArtVerse from '../images/ArtVerse.gif';
-import OldPortfolio from '../images/Portfolio.png';
+import OldPortfolio from '../images/Old PORTFOLIO.gif';
+import STARBUCKS from '../images/STARBUCKS.gif'
+
 
 const projects = [
   {
@@ -16,7 +17,7 @@ const projects = [
   {
     title: "Starbucks Clone",
     description: "A modern clone of Starbucks' homepage with stylish responsive design.",
-    image: StarBucksLogo,
+    image: STARBUCKS,
     link: "https://coffee-ridden.netlify.app/",
     code: "https://github.com/Damon-Nunez/starbucksthedamonway",
     tags: ["React", "Bootstrap", "JavaScript"]
@@ -31,6 +32,12 @@ const projects = [
   }
 ];
 
+const backgroundMap = {
+  "ArtVerse": "bg-pink-200",
+  "Starbucks Clone": "bg-green-100",
+  "Portfolio v1": "bg-blue-900"
+};
+
 export default function Projects() {
   return (
     <section id="projects" className="bg-white py-20 px-6">
@@ -40,28 +47,22 @@ export default function Projects() {
         <Fade triggerOnce direction="up">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, index) => (
-             <div
-  key={index}
-  className="relative bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
->
- {project.title === "ArtVerse" ? (
-  <div className="bg-pink-200 h-48 w-full flex items-center justify-center">
-    <img
-      src={ArtVerse}
-      alt="ArtVerse demo"
-      className="h-full object-contain"
-    />
-  </div>
-) : (
-  <div className="bg-indigo-100 h-48 flex items-center justify-center">
-    <div className="text-indigo-700 text-xl font-semibold">
-      {project.title}
-    </div>
-  </div>
-)}
+              <div
+                key={index}
+                className="relative bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
+              >
+                {/* Project preview with custom bg */}
+                <div
+                  className={`${backgroundMap[project.title] || "bg-gray-100"} h-48 w-full flex items-center justify-center`}
+                >
+                  <img
+                    src={project.image}
+                    alt={`${project.title} demo`}
+                    className="h-full object-contain"
+                  />
+                </div>
 
-
-                {/* Overlay for ArtVerse */}
+                {/* ArtVerse overlay */}
                 {project.title === "ArtVerse" && (
                   <a
                     href={project.link}
@@ -78,7 +79,6 @@ export default function Projects() {
                   <h3 className="text-lg font-bold text-gray-800 mb-1">{project.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{project.description}</p>
 
-                  {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, i) => {
                       const colors = {
@@ -104,7 +104,6 @@ export default function Projects() {
                     })}
                   </div>
 
-                  {/* Links */}
                   <div className="flex gap-4">
                     {project.title !== "ArtVerse" && (
                       <a

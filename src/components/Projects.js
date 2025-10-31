@@ -10,7 +10,7 @@ const projects = [
     title: "ArtVerse",
     description: "A full-stack social platform for artists with post, like, comment, and bubble-saving features.",
     image: ArtVerse,
-    link: "https://drive.google.com/file/d/1-NpgmFPQGws3JEhh5ZYxLOtzUTupD03Z/view",
+    link: "https://drive.google.com/file/d/1t_5CcRQdQbHrsi4Qc-Hnsy7mnXZoKZvZ/view?usp=sharing",
     code: "https://github.com/Damon-Nunez/ArtVerseOfficial",
     tags: ["React", "Next.js", "PostgreSQL", "Bootstrap", "Figma", "Cloudinary", "MySQL"]
   },

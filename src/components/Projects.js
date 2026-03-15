@@ -1,34 +1,34 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import ArtVerse from '../images/ArtVerse.gif';
-import OldPortfolio from '../images/Old PORTFOLIO.gif';
 import STARBUCKS from '../images/STARBUCKS.gif'
+import OATrax from '../images/OATrax.gif'
 
 
 const projects = [
   {
-    title: "ArtVerse",
-    description: "ArtVerse is a full-stack social platform where artists can share artwork, interact with communities, and receive feedback through likes and comments. Built with Next.js, Express, Prisma, and PostgreSQL.",
+     title: "OA:Trax",
+  description: "AI-powered coding interview trainer that guides users through LeetCode-style problems using structured hints instead of direct answers.",
+  image:OATrax,
+  link: "YOUR_DEMO_LINK", //needs to be done
+  code: "https://github.com/Damon-Nunez/OA-Trax",
+  tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "OpenAI API"]
+  },
+  {
+        title: "ArtVerse",
+    description: "Full-stack social platform where artists can share artwork, comment, and interact within community spaces called Bubbles. Built with Next.js, Express, Prisma, and PostgreSQL with Cloudinary media uploads.",
     image: ArtVerse,
     link: "https://drive.google.com/file/d/1t_5CcRQdQbHrsi4Qc-Hnsy7mnXZoKZvZ/view?usp=sharing",
     code: "https://github.com/Damon-Nunez/ArtVerseOfficial",
     tags: ["React", "Next.js", "PostgreSQL", "Bootstrap", "Figma", "Cloudinary", "MySQL"]
   },
   {
-    title: "Starbucks Clone",
+      title: "Starbucks Clone",
     description: "A modern clone of Starbucks' homepage with stylish responsive design.",
     image: STARBUCKS,
     link: "https://coffee-ridden.netlify.app/",
     code: "https://github.com/Damon-Nunez/starbucksthedamonway",
     tags: ["React", "Bootstrap", "JavaScript"]
-  },
-  {
-    title: "Portfolio v1",
-    description: "My original portfolio built with basic React and CSS. Now archived.",
-    image: OldPortfolio,
-    link: "https://damonjnunez.netlify.app/",
-    code: "https://github.com/Damon-Nunez/Portfolio",
-    tags: ["React", "Bootstrap", "CSS", "JavaScript"]
   }
 ];
 

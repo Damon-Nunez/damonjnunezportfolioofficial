@@ -23,13 +23,13 @@ export default function Hero() {
       <Fade triggerOnce direction="up" delay={200}>
         <h2 className="text-xl md:text-2xl text-gray-300 mb-10 text-center max-w-2xl">
           <ReactTyped
-            strings={[
-              "Full-Stack Developer.",
-              "Builder of clean UIs.",
-              "Obsessed with crafting meaningful tech.",
-              "Binger of animes...oops",
-              "why are you still reading this. Scroll."
-            ]}
+        strings={[
+  "Full-Stack Developer.",
+  "Building AI-powered applications.",
+  "Next.js | Node.js | PostgreSQL.",
+  "Creator of OA:Trax.",
+  "Anime enjoyer... occasionally."
+]}
             typeSpeed={40}
             backSpeed={20}
             loop

@@ -1,7 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import BigTrax from "../images/BigTrax.jpg";
-import ReactTyped from "react-typed";
 
 export default function About() {
   return (
@@ -23,8 +22,11 @@ export default function About() {
         I grew up through coding.
       </h2>
       <p className="text-gray-800 text-[17px] leading-relaxed font-medium mb-4">
-  My journey in tech spans over six years — and it’s been more than just learning to code. It’s been my coming-of-age story. From my start in a high school after-school program called ScriptEd, to Code Nation in junior year, and then graduating from the Marcy Lab School, every chapter came with its own trials and growth. I took a solo path through college and the workforce, learning life lessons the hard way, before returning to Marcy with a renewed sense of purpose. I've won, I've failed, I've built, I've stumbled — but I’ve never stopped moving forward. Coding didn’t just teach me tech. It taught me who I am.
-      </p>
+My journey in tech spans over six years. I began learning programming through ScriptEd and Code Nation before graduating from the Marcy Lab School, where I developed full-stack applications and collaborated on production-style projects.
+
+Today I focus on building scalable web platforms and AI-powered tools, including OA:Trax — a coding interview trainer that guides developers through algorithmic problems with structured hints.
+
+I’m currently expanding my cloud and systems knowledge through the OBT Advanced Cloud Program while working with mentors across the tech industry.      </p>
       <p className="italic text-gray-500 text-sm mt-6">
         "I didn’t just learn to code. I learned who I am."
       </p>

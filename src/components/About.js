@@ -38,7 +38,10 @@ export default function About() {
         ["2019–2021", "Code Nation"],
         ["2022–2023", "Marcy Lab School"],
         ["2023–2024", "Solo Learning"],
-        ["2025", "Return to Marcy"]
+        ["2025", "Return to Marcy"],
+        ["2025","Marcy Lab Spark Series"],
+        ["2026","Google VSWEP Mentorship"],
+        ["2026","OBT Advanced Cloud Program (AWS CCP + SAAP)"],
       ].map(([year, label], i) => (
         <Fade key={i} triggerOnce direction="up" delay={i * 100}>
           <div className="flex items-center gap-4">

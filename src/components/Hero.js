@@ -27,7 +27,8 @@ export default function Hero() {
               "Full-Stack Developer.",
               "Builder of clean UIs.",
               "Obsessed with crafting meaningful tech.",
-              "Binger of animes...oops"
+              "Binger of animes...oops",
+              "why are you still reading this. Scroll."
             ]}
             typeSpeed={40}
             backSpeed={20}
@@ -37,7 +38,18 @@ export default function Hero() {
       </Fade>
 
       <Fade triggerOnce direction="up" delay={400}>
+        
         <div className="flex flex-wrap justify-center gap-6">
+
+
+           <a href="/Damon_Nunez_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-100 transform hover:scale-105 transition"
+            >
+              📄 View Resume
+            </a>
+
           <a
             href="#projects"
             className="bg-white text-indigo-600 px-6 py-3 rounded shadow hover:bg-indigo-100 transform hover:scale-105 transition"

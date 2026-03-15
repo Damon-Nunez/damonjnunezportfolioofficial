@@ -47,14 +47,6 @@ export default function Contact() {
               <div className="flex items-center gap-2"><SiKnexdotjs className="text-red-600 text-2xl"/><span className="text-sm">Knex.js</span></div>
               <div className="flex items-center gap-2"><SiAxios className="text-blue-500 text-2xl"/><span className="text-sm">Axios</span></div>
             </div>
-
-            <a href="/Damon_Nunez_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg mx-20 font-semibold hover:bg-indigo-700 transform hover:scale-105 transition duration-50"
-            >
-              📄 View Resume
-            </a>
           </div>
 
           {/* RIGHT: Contact Form */}

@@ -8,7 +8,7 @@ import STARBUCKS from '../images/STARBUCKS.gif'
 const projects = [
   {
     title: "ArtVerse",
-    description: "A full-stack social platform for artists with post, like, comment, and bubble-saving features.",
+    description: "ArtVerse is a full-stack social platform where artists can share artwork, interact with communities, and receive feedback through likes and comments. Built with Next.js, Express, Prisma, and PostgreSQL.",
     image: ArtVerse,
     link: "https://drive.google.com/file/d/1t_5CcRQdQbHrsi4Qc-Hnsy7mnXZoKZvZ/view?usp=sharing",
     code: "https://github.com/Damon-Nunez/ArtVerseOfficial",
